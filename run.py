@@ -10,3 +10,9 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+import matplotlib.pyplot as plt
+plt.hist(data['2019'], bin=20)
+plt.xlabel('GDP')
+plt.ylabel('Frequency')
+plt.title('Distribution of GDP in 2019')
+plt.show()
